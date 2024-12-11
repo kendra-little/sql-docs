@@ -97,7 +97,7 @@ For [!INCLUDE [ssSQL22](../../includes/sssql22-md.md)] CU 4 and later versions, 
 The following example shows how to configure automatic tuning to ignore a query if it's eligible for automatic plan forcing. This example uses a value of `422` as the `query_id` that was selected from the Query Store.
 
 ```sql
-EXECUTE sys.sp_configure_automatic_tuning 'FORCE_LAST_GOOD_PLAN', 'QUERY', 422, 'ON';
+EXECUTE sys.sp_configure_automatic_tuning 'FORCE_LAST_GOOD_PLAN', 'QUERY', 422, 'OFF';
 ```
 
 ### B. Configure the Automatic Tuning (Force Last Good Plan option) to ignore a specific query using named parameters
